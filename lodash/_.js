@@ -1,5 +1,3 @@
-
-
 const _ = {
   clamp(number, lower, upper) {
     let lowerClampedValue = Math.max(number, lower);
@@ -64,6 +62,14 @@ const _ = {
       return array.join("");
     } else {
       return string;
+    }
+  },
+  has(object, key) {
+    const hasValue = object[key];
+    if (hasValue != undefined) {
+      return true;
+    } else {
+      return false;
     }
   },
 };
